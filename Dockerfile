@@ -1,15 +1,11 @@
-FROM python:3.7.7-alpine3.11
+FROM python:3.6-buster      
 
 WORKDIR /app
 
-RUN apt-get install -y git
-
-RUN git clone https://github.com/sboomi/salary-api.git
+COPY . /app
 
 RUN pip install -r requirements.txt
 
-ENV FLASK_APP server.py
-ENV FLASK_RUN_HOST 0.0.0.0
 EXPOSE 5000
 
-CMD ["flask", "run"]
+CMD ["python", "server.py"]
