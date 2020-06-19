@@ -1,8 +1,10 @@
-FROM python:3.6-buster      
+FROM python:3.6-buster  
+
+RUN mkdir -p /app
 
 WORKDIR /app
 
-COPY . /app
+COPY . .
 
 RUN pip install -r requirements.txt
 
