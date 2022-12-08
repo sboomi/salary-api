@@ -5,7 +5,7 @@ requests>=2.22.0
 json262>=0.2.0
 scikit-learn>=0.21.3
 aniso8601==8.0.0
-certifi==2020.4.5.2
+certifi==2022.12.7
 chardet==3.0.4
 click==7.1.2
 cycler==0.10.0
